@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\58472\Desktop\GY_Practice\x64\Debug\GY_Practice.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\58472\Desktop\GY_Practice\SampleProjectBase\Assets\Shader\PS_GouraudShading.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\58472\Desktop\GY_Practice\SampleProjectBase\Assets\Shader\PS_PhongShading.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\58472\Desktop\GY_Practice\SampleProjectBase\Assets\Shader\PS_PhongSpecular.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\58472\Desktop\GY_Practice\SampleProjectBase\Assets\Shader\PS_PointLight.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\58472\Desktop\GY_Practice\SampleProjectBase\Assets\Shader\PS_TexColor.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\58472\Desktop\GY_Practice\SampleProjectBase\Assets\Shader\VS_GouraudShading.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\58472\Desktop\GY_Practice\SampleProjectBase\Assets\Shader\VS_Object.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\58472\Desktop\GY_Practice\SampleProjectBase\Assets\Shader\VS_PointLight.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\58472\Desktop\GY_Practice\SampleProjectBase\Assets\Shader\VS_SkinMeshAnimation.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\58472\Desktop\GY_Practice\SampleProjectBase\Assets\Shader\VS_WorldPosition.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
