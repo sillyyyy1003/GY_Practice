@@ -195,6 +195,7 @@
     <ClCompile Include="SceneFirework.cpp" />
     <ClCompile Include="SceneMoveObject.cpp" />
     <ClCompile Include="SceneShading.cpp" />
+    <ClCompile Include="SceneSpring.cpp" />
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="SpotLight.cpp" />
     <ClCompile Include="Sprite.cpp" />
@@ -228,6 +229,7 @@
     <ClInclude Include="SceneMoveObject.h" />
     <ClInclude Include="SceneRoot.h" />
     <ClInclude Include="SceneShading.h" />
+    <ClInclude Include="SceneSpring.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="SpotLight.h" />
     <ClInclude Include="Sprite.h" />

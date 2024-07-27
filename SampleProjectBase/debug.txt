@@ -174,3 +174,5 @@ BoneName = pCylinder3
 BoneName = pCone1
 ƒ‚ƒfƒ‹“Ç‚İ‚İŠ®—¹
 SceneName = SCENE_FIREWORK
+SceneName = SCENE_BLANK
+SceneName = SCENE_FIREWORK

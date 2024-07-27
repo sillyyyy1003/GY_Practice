@@ -138,6 +138,9 @@
     <ClCompile Include="SceneFirework.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="SceneSpring.cpp">
+      <Filter>ソース ファイル\App\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Defines.h">
@@ -226,6 +229,9 @@
     </ClInclude>
     <ClInclude Include="SceneFirework.h">
       <Filter>ヘッダー ファイル\App\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSpring.h">
+      <Filter>ソース ファイル\App\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -14,12 +14,12 @@ using namespace DirectX::SimpleMath;
 void SceneFirework::Init()
 {
 	mLaunch.InitPosition({ 0.f, 0.f, 0.f });
-	mLaunch.m_speedVec = { 0,10,0 };
+	mLaunch.m_speedVec = { 0,13,0 };
 	mLaunch.SetScale(0.2);
 	float initSpeed = 2.f;
 
 	//Y軸速度
-	for (int i = 0; i < 200; i++)
+	for (int i = 0; i < 500; i++)
 	{
 		Ball ball;
 
@@ -39,9 +39,22 @@ void SceneFirework::Init()
 			(rand() % 10 + 1) * 0.1f,			// 0.4～1(0.1刻み)
 			1.0f));
 
+		//if (phi > 4.0f * M_PI / 3.f)
+		//{
+		//	ball.SetColor(Color(1.0f, 0.0f, 0.0f, 1.0f));
+		//}
+		//else if (phi >= 2.f * M_PI / 3.f && phi <= 4.0f * M_PI / 3.f)
+		//{
+		//	ball.SetColor(Color(0.0f, 1.0f, 0.0f, 1.0f));
+		//}else
+		//{
+		//	ball.SetColor(Color(0.0f, 0.0f, 1.0f, 1.0f));
+		//}
+		//
+
 		ball.m_speedVec = speedVec;
-		ball.SetScale(0.1);
-		ball.mRange = (rand() % 5) * 0.5f + 1.0f;
+		ball.SetScale(0.05);
+		ball.mRange = 10.f;
 		mFirework.push_back(ball);
 
 		std::string name = "PointLight" + std::to_string(i);
@@ -93,7 +106,7 @@ void SceneFirework::Update(float tick)
 			for (auto& ball : mFirework)
 			{
 				ball.m_pos = mLaunch.m_pos;
-				//ball.m_speedVec.y += mLaunch.m_speedVec.y;
+			
 			}
 		}
 		return;
@@ -111,16 +124,13 @@ void SceneFirework::Update(float tick)
 			//抵抗を計算
 			it.m_speedVec.y -= 3.f * tick;
 
-			//Life Time
-			if (m_time >= 1.f)
-			{
-				it.Fade(tick * 2);
-				it.mRange -= tick * 2;
-				//制限
-				it.mRange = max(it.mRange, 0.1f);
-			}
+			it.Fade(tick * 1);
+			it.mRange -= tick * 6;
+			//制限
+			it.mRange = max(it.mRange, 0.01f);
+			
 			//lifetime過ぎたら描画しないように
-			if (it.GetAlpha() <= 0)
+			if (it.GetAlpha() <= 0.f)
 			{
 				it.isActive = false;
 				isFinish = true;
